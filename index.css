@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.clima-container {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0 20px;
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#clima-title {
+  margin-bottom: 50px;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+.climaLabel {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#climaInput {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#climaInput:focus {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#submitClima {
+  outline: none;
+  background-color: #1e293b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 50%;
+  align-self: center;
+  padding: 10px;
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+}
+
+#result-container {
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#pais {
+  margin-bottom: 25px;
+  font-size: 3rem;
+}
+
+.result-text {
+  font-size: 2.5rem;
+}
