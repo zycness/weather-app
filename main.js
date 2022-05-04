@@ -12,8 +12,8 @@ solicitudApi = (url) => {
     .then((res) => res.json())
     .then((data) => {
       pais.innerText = data.name;
-      text.innerText = data.main.temp + " C°";
-      text1.innerText = data.main.humidity + " %";
+      text.innerText = "Temperatura "+ data.main.temp + " C°";
+      text1.innerText = "Humedad " + data.main.humidity + " %";
     })
     .catch((error) => {
       if (pais.innerText == "undefined") {
